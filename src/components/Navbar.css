@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the nav-link-container */
+  align-items: center;
+  background: linear-gradient(135deg, #6a1b9a, #38006b); /* Purple to Dark Purple */
+  padding: 0 20px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid black; /* Add border */
+}
+
+.nav-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border-radius: 50%; /* Make it oval */
+  width: 350px; /* Define width for the oval shape */
+  height: 55px; /* Define height for the oval shape */
+  border: 2px solid black; /* Black border */
+  position: relative; /* Relative positioning */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #D4AF37; /* Metallic Gold */
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  margin: 0 5px; /* Adjust margin to space the links */
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Change color on hover */
+}

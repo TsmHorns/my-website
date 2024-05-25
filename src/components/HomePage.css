@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ddd; /* Light gray for better contrast against the dark background */
+  overflow: hidden; /* Prevents scrolling */
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%; }
+  100% { background-position: 100% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%; }
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(135deg, #0000FF, transparent), /* Blue */
+    linear-gradient(to top left, #1E90FF, transparent), /* Dodger Blue */
+    linear-gradient(to top right, #4169E1, transparent), /* Royal Blue */
+    linear-gradient(to bottom left, #00008B, transparent), /* Dark Blue */
+    linear-gradient(to bottom right, #8A2BE2, transparent); /* Blue Violet */
+  background-size: 200% 200%;
+  background-blend-mode: screen; /* Blend mode */
+  position: relative;
+  overflow: hidden;
+  z-index: 0; /* Base layer */
+  /* animation: gradientBackground 30s ease infinite; Removed animation */
+}
+
+.section {
+  width: 80%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure content is above the background */
+}
+
+.section h2 {
+  color: #fff; /* White for better contrast */
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: #ddd; /* Light gray for readability */
+}

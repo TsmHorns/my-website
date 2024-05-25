@@ -1,0 +1,33 @@
+.section {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    margin: 10px auto; /* Center the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure content is above the background */
+    text-align: center; /* Center the text */
+}
+
+.section button {
+    background: linear-gradient(to right, #4B0082, #800080); /* Gradient from indigo to dark purple */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px auto; /* Center the button */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50px; /* Make the button oval */
+    width: 200px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+}
+
+.section button:hover {
+    background: linear-gradient(to right, #4B0082, #800080); /* Keep the same gradient on hover */
+    color: white;
+}
